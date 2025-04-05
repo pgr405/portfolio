@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gururajan Padmanaban - Resume</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Basic print optimizations */
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        /* Chrome, Safari */
+        print-color-adjust: exact;
+        /* Firefox, Edge */
+        font-size: 10pt;
+        /* Adjust font size for print */
+        margin: 0.5in !important;
+        /* Ensure reasonable margins */
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        /* Prevent links from being blue/underlined */
+      }
+
+      .no-print {
+        display: none;
+        /* Hide elements not needed for print */
+      }
+
+      /* Force columns to not break inside */
+      .print-inside-avoid {
+        page-break-inside: avoid;
+      }
+
+      /* Try to keep experience/project blocks together */
+      .experience-item,
+      .project-item,
+      .education-item,
+      .award-item {
+        page-break-inside: avoid;
+      }
+    }
+
+    /* Custom utility for slightly smaller text */
+    .text-sm-plus {
+      font-size: 0.92rem;
+      /* Adjust as needed */
+      line-height: 1.4rem;
+    }
+
+    /* Define accent color */
+    :root {
+      --accent-color: #4338ca;
+      /* Indigo-700 */
+    }
+
+    .accent-text {
+      color: var(--accent-color);
+    }
+
+    .accent-bg {
+      background-color: var(--accent-color);
+    }
+
+    .accent-border {
+      border-color: var(--accent-color);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans leading-normal">
+  <div class="max-w-4xl mx-auto p-8 print:p-0">
+
+    <!-- Header -->
+    <header class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6 print-inside-avoid">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Gururajan Padmanaban</h1>
+        <h2 class="text-xl md:text-2xl font-light accent-text mb-3">AI Innovator & Software Expert | GenAI Solutions
+          Architect</h2>
+        <!-- Contact Info using Flexbox for better alignment -->
+        <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-gray-600">
+          <span class="inline-flex items-center">
+            <i class="fas fa-map-marker-alt w-4 mr-2 accent-text"></i> Dharmapuri, Tamil Nadu, India
+          </span>
+          <a href="tel:8012132204" class="inline-flex items-center hover:accent-text">
+            <i class="fas fa-phone w-4 mr-2 accent-text"></i> 8012132204
+          </a>
+          <a href="mailto:pgr405@gmail.com" class="inline-flex items-center hover:accent-text">
+            <i class="fas fa-envelope w-4 mr-2 accent-text"></i> pgr405@gmail.com
+          </a>
+          <span class="inline-flex items-center">
+            <i class="fab fa-whatsapp w-4 mr-2 accent-text"></i> 8012132204
+          </span>
+          <!-- <a href="https://www.linkedin.com/in/gururajanpadmanaban-307b0266" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center hover:accent-text">
+            <i class="fab fa-linkedin w-4 mr-2 accent-text"></i> LinkedIn Profile
+          </a> -->
+          <a href="https://www.linkedin.com/in/gururajan-padmanaban-portfolio/" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center hover:accent-text">
+            <i class="fab fa-linkedin w-4 mr-2 flex-shrink-0 accent-text"></i>
+            <!-- Added flex-shrink-0 to prevent icon shrinking -->
+          <span class="break-all">https://www.linkedin.com/in/gururajan-padmanaban-portfolio/</span>
+          <!-- URL is now the visible text, wrapped in span with break-all -->
+          </a>
+        </div>
+      </div>
+      <!-- Optional Profile Picture - Uncomment if needed and ensure path is correct -->
+      <!-- <div class="mt-4 md:mt-0 md:ml-6 flex-shrink-0 no-print">
+                <img src="Gururajan.jpg" alt="Profile" class="rounded-full w-28 h-28 object-cover border-2 accent-border">
+            </div> -->
+    </header>
+
+    <!-- Summary -->
+    <section class="mb-6 print-inside-avoid">
+      <h3 class="text-xl font-semibold border-b-2 accent-border mb-3 pb-1">Summary</h3>
+      <p class="text-sm-plus text-gray-700">
+        Results-driven AI Innovator and Senior Software Engineer with 10+ years in IT and Freelancing. Proven expertise
+        in architecting and developing scalable GenAI solutions, enterprise software, and cloud-native systems.
+        Specialized in AI security, developing patent-pending AI wrapper technology (SecureLLM) to enhance
+        decision-making and safeguard models. Adept at leading modernization efforts, optimizing cloud infrastructure
+        (AWS), and delivering high-impact, cost-effective solutions. Seeking to leverage AI and software engineering
+        skills to drive innovation in challenging roles.
+      </p>
+    </section>
+
+    <!-- Main Content Area (Two Columns) -->
+    <div class="flex flex-col md:flex-row md:gap-8">
+
+      <!-- Left/Main Column -->
+      <div class="md:w-2/3">
+
+        <!-- Experience -->
+        <section class="mb-6">
+          <h3 class="text-xl font-semibold border-b-2 accent-border mb-4 pb-1">Professional Experience</h3>
+          <div class="space-y-5">
+            <!-- Trellix -->
+            <div class="experience-item">
+              <div class="flex justify-between items-baseline mb-1">
+                <h4 class="text-lg font-semibold">Senior Software Development Engineer</h4>
+                <span class="text-sm font-medium accent-text">Jan 2023 - Present</span>
+              </div>
+              <p class="text-md font-medium text-gray-700 mb-2">Trellix</p>
+              <ul class="list-disc pl-5 text-sm-plus text-gray-700 space-y-1">
+                <li>Invented, developed, and productized <span class="font-semibold">SecureLLM</span>, a privacy-first
+                  AI security wrapper (Patent Pending, Hackathon Winner).</li>
+                <li>Designed & implemented GenAI tools for automated threat reporting and analysis using AWS Bedrock &
+                  LangChain.</li>
+                <li>Led plugin modernization, migrating legacy systems to cloud-native AWS architectures (ECS, Lambda).
+                </li>
+                <li>Contributed significantly to company's IP portfolio through multiple patent filings in AI security.
+                </li>
+              </ul>
+            </div>
+            <!-- FireEye -->
+            <div class="experience-item">
+              <div class="flex justify-between items-baseline mb-1">
+                <h4 class="text-lg font-semibold">Sr. DevOps Engineer</h4>
+                <span class="text-sm font-medium accent-text">Mar 2022 - Dec 2022</span>
+              </div>
+              <p class="text-md font-medium text-gray-700 mb-2">FireEye, Inc.</p>
+              <ul class="list-disc pl-5 text-sm-plus text-gray-700 space-y-1">
+                <li>Engineered AWS data pipeline optimizations (Athena, S3), achieving <span class="font-semibold">>99%
+                    cost reduction</span> & 95% storage savings.</li>
+                <li>Architected and delivered Dashboard as a Service (DaaS) integrating AWS QuickSight with Okta SSO.
+                </li>
+                <li>Developed automated systems for AWS usage monitoring and user access management using Python & REST
+                  APIs.</li>
+              </ul>
+            </div>
+            <!-- First Advantage -->
+            <div class="experience-item">
+              <div class="flex justify-between items-baseline mb-1">
+                <h4 class="text-lg font-semibold">Full Stack Developer</h4>
+                <span class="text-sm font-medium accent-text">Jan 2019 - Jul 2021</span>
+              </div>
+              <p class="text-md font-medium text-gray-700 mb-2">FIRST ADVANTAGE</p>
+              <ul class="list-disc pl-5 text-sm-plus text-gray-700 space-y-1">
+                <li>Developed and enhanced key applications including ePay Invoice Portal and multi-domain DMS
+                  (Alfresco).</li>
+                <li>Contributed to converting monolithic applications to microservices using Django, Python, and Spring
+                  Boot.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-6">
+          <h3 class="text-xl font-semibold border-b-2 accent-border mb-4 pb-1">Key Projects</h3>
+          <div class="space-y-4">
+            <div class="project-item">
+              <h4 class="text-lg font-semibold">SecureLLM – AI Security Wrapper</h4>
+              <p class="text-sm-plus text-gray-700 mb-1">Privacy-first GenAI security layer addressing OWASP LLM
+                vulnerabilities. Supports local CPU & cloud deployments.</p>
+              <p class="text-xs text-gray-600"> <span class="font-semibold">Tech:</span> Python, FastAPI, Docker, AWS,
+                LangChain, LLMs (Local/Cloud)</p>
+            </div>
+            <div class="project-item">
+              <h4 class="text-lg font-semibold">GenAI4RepDB – Threat Intelligence Automation</h4>
+              <p class="text-sm-plus text-gray-700 mb-1">Suite of GenAI tools integrated with reporting DB for automated
+                cybersecurity insights and executive summaries.</p>
+              <p class="text-xs text-gray-600"><span class="font-semibold">Tech:</span> AWS Lambda, AWS Bedrock, Python,
+                LangChain, OpenAI/Anthropic APIs</p>
+            </div>
+            <div class="project-item">
+              <h4 class="text-lg font-semibold">AWS Cost Optimization Initiative</h4>
+              <p class="text-sm-plus text-gray-700 mb-1">Redesigned data querying and storage strategy using AWS Athena
+                partitioning and S3 lifecycle policies.</p>
+              <p class="text-xs text-gray-600"><span class="font-semibold">Tech:</span> AWS S3, Athena, Glue, Lambda,
+                Python</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-6 education-item">
+          <h3 class="text-xl font-semibold border-b-2 accent-border mb-3 pb-1">Education</h3>
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <h4 class="text-lg font-semibold">Master of Science (MSc), Computer Science</h4>
+              <span class="text-sm font-medium accent-text">2013 - 2015</span>
+            </div>
+            <p class="text-md font-medium text-gray-700">Don Bosco College, Dharmapuri</p>
+            <p class="text-sm text-gray-600">Grade: A+ (Distinction)</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right/Sidebar Column -->
+      <div class="md:w-1/3">
+
+        <!-- Skills -->
+        <section class="mb-6 print-inside-avoid">
+          <h3 class="text-xl font-semibold border-b-2 accent-border mb-3 pb-1">Skills</h3>
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-md mb-1">AI & Machine Learning</h4>
+              <p class="text-sm-plus text-gray-700">GenAI, LLMs (OpenAI, Anthropic, Llama), LangChain, LLMOps, AI
+                Security (OWASP Top 10 for LLMs), AI Product Development, RAG</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-md mb-1">Cloud & DevOps</h4>
+              <p class="text-sm-plus text-gray-700">AWS (Lambda, Bedrock, S3, ECS, EC2, Athena, QuickSight, Glue),
+                Docker, Kubernetes, CI/CD, Cost Optimization</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-md mb-1">Programming & Frameworks</h4>
+              <p class="text-sm-plus text-gray-700">Python (Expert), FastAPI, Django, C#, .NET Framework, REST APIs, SQL
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-md mb-1">Professional</h4>
+              <p class="text-sm-plus text-gray-700">Innovation Leadership, Problem Solving, Technical Architecture,
+                Enterprise Integration, Patent Filing, Agile Methodologies</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Awards -->
+        <section class="mb-6 print-inside-avoid">
+          <h3 class="text-xl font-semibold border-b-2 accent-border mb-3 pb-1">Awards & Recognition</h3>
+          <div class="space-y-3">
+            <div class="award-item">
+              <h4 class="font-semibold text-md">AI Wrapper Tech - Hackathon Winner & Patent Filed</h4>
+              <p class="text-sm text-gray-600">Trellix (NEBU), 2024</p>
+            </div>
+            <div class="award-item">
+              <h4 class="font-semibold text-md">Multiple Patent Applications (Generative AI Security)</h4>
+              <p class="text-sm text-gray-600">Filed 2024</p>
+            </div>
+            <div class="award-item">
+              <h4 class="font-semibold text-md">Accountable & Empowered Award</h4>
+              <p class="text-sm text-gray-600">FADV, 2020</p>
+            </div>
+            <div class="award-item">
+              <h4 class="font-semibold text-md">Delivery Excellence & Result Focused Awards</h4>
+              <p class="text-sm text-gray-600">FADV, 2019</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
